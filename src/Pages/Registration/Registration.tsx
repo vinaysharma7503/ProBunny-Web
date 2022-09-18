@@ -14,9 +14,9 @@ const Registration = (props: Props) => {
                         <div className="card">
                             <div className="card-body">
                                 <div className="row">
-                                    <div className="col-md-12 border p-2">
+                                    <div className="col-md-12 p-2">
                                         <h3 className="text-center">
-                                            Submit Your Profile
+                                            SUBMIT YOUR PROFILE
                                         </h3>
                                     </div>
                                     <div className="col-md-12 pt-2">
@@ -27,7 +27,7 @@ const Registration = (props: Props) => {
                                         >
                                             <div className="form-group row">
                                                 <div className="form-group-wraper col">
-                                                    <label>First Name*</label>
+                                                    <label>FIRST NAME</label>
                                                     <input
                                                         type="name"
                                                         className="form-control"
@@ -37,7 +37,7 @@ const Registration = (props: Props) => {
                                                     />
                                                 </div>
                                                 <div className="form-group-wraper col">
-                                                    <label>Last Name*</label>
+                                                    <label>LAST NAME</label>
                                                     <input
                                                         type="name"
                                                         className="form-control"
@@ -49,7 +49,7 @@ const Registration = (props: Props) => {
                                             </div>
                                             <div className="form-group row">
                                                 <div className="form-group-wraper col">
-                                                    <label>Email</label>
+                                                    <label>EMAIL</label>
                                                     <input
                                                         type="email"
                                                         className="form-control"
