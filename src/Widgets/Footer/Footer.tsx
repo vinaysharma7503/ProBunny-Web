@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 type Props = {}
 
@@ -27,70 +28,85 @@ const Footer = (props: Props) => {
 
                 <ul className="list-unstyled mb-0">
                   <li>
-                    <a href="#!" className="text-white">Link 1</a>
+                    <Link to="/" className="text-white">Home</Link>
                   </li>
                   <li>
-                    <a href="#!" className="text-white">Link 2</a>
+                    <Link to="/about" className="text-white">About</Link>
                   </li>
                   <li>
-                    <a href="#!" className="text-white">Link 3</a>
+                    <Link to="/registration" className="text-white">Registration</Link>
                   </li>
                   <li>
-                    <a href="#!" className="text-white">Link 4</a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-lg-2 col-md-6 mb-4 mb-md-0">
-                <h5 className="text-uppercase">Links</h5>
-
-                <ul className="list-unstyled mb-0">
-                  <li>
-                    <a href="#!" className="text-white">Link 1</a>
-                  </li>
-                  <li>
-                    <a href="#!" className="text-white">Link 2</a>
-                  </li>
-                  <li>
-                    <a href="#!" className="text-white">Link 3</a>
-                  </li>
-                  <li>
-                    <a href="#!" className="text-white">Link 4</a>
+                    <Link to="/contact" className="text-white">ConatctUs</Link>
                   </li>
                 </ul>
               </div>
               <div className="col-lg-2 col-md-6 mb-4 mb-md-0">
-                <h5 className="text-uppercase">Links</h5>
+                <h5 className="text-uppercase">Work With</h5>
 
                 <ul className="list-unstyled mb-0">
                   <li>
-                    <a href="#!" className="text-white">Link 1</a>
+                    <Link to="/" className="text-white">Actor</Link>
                   </li>
                   <li>
-                    <a href="#!" className="text-white">Link 2</a>
+                    <Link to="/" className="text-white">Singer</Link>
                   </li>
                   <li>
-                    <a href="#!" className="text-white">Link 3</a>
+                    <Link to="/" className="text-white">Dancer</Link>
                   </li>
                   <li>
-                    <a href="#!" className="text-white">Link 4</a>
+                    <Link to="/" className="text-white">Voice Artist</Link>
+                  </li>
+                  <li>
+                    <Link to="/" className="text-white">Model</Link>
                   </li>
                 </ul>
               </div>
               <div className="col-lg-2 col-md-6 mb-4 mb-md-0">
-                <h5 className="text-uppercase">Links</h5>
+                <h5 className="text-uppercase">Production Team</h5>
 
                 <ul className="list-unstyled mb-0">
-                  <li>
-                    <a href="#!" className="text-white">Link 1</a>
+                <li>
+                    <Link to="/" className="text-white">Costume Designer</Link>
                   </li>
                   <li>
-                    <a href="#!" className="text-white">Link 2</a>
+                    <Link to="/" className="text-white">Fashion Designer</Link>
                   </li>
                   <li>
-                    <a href="#!" className="text-white">Link 3</a>
+                    <Link to="/" className="text-white">Art Designer</Link>
                   </li>
                   <li>
-                    <a href="#!" className="text-white">Link 4</a>
+                    <Link to="/" className="text-white">Makeup Artist</Link>
+                  </li>
+                  <li>
+                    <Link to="/" className="text-white">Camera Equipments</Link>
+                  </li>
+                  <li>
+                    <Link to="/" className="text-white">Farm Houses</Link>
+                  </li>
+                  <li>
+                    <Link to="/" className="text-white">Event Origaniser</Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="col-lg-2 col-md-6 mb-4 mb-md-0">
+                <h5 className="text-uppercase">Other Links</h5>
+
+                <ul className="list-unstyled mb-0">
+                <li>
+                    <Link to="/" className="text-white">Directors</Link>
+                  </li>
+                  <li>
+                    <Link to="/" className="text-white">Producers</Link>
+                  </li>
+                  <li>
+                    <Link to="/" className="text-white">Assistant Directors</Link>
+                  </li>
+                  <li>
+                    <Link to="/" className="text-white">Executive Director</Link>
+                  </li>
+                  <li>
+                    <Link to="/" className="text-white">Production Head</Link>
                   </li>
                 </ul>
               </div>
