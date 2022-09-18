@@ -1,7 +1,19 @@
-.header-container{
+.header-container {
     background-color: #021B56;
     color: #fff;
-    p{
+
+    p {
         margin-top: 15px;
+    }
+}
+
+.location {
+    .live {
+        color: red;
+    }
+    .right{
+        background-color: #021B56;
+        color: #fff;
+        border-radius: 0px 15px 15px 0px;
     }
 }
