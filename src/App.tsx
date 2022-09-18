@@ -1,13 +1,15 @@
 import React, { Suspense, lazy } from 'react'
 import { useRoutes } from 'react-router-dom'
 import './App.scss'
-const HomePage = lazy(() => import('@Pages/Home/Home'));
-const Registration = lazy(()=>import('@Pages/Registration/Registration'))
+const Home = lazy(() => import('@Pages/Home/Home'));
+const Registration = lazy(()=>import('@Pages/Registration/Registration'));
+const Contact = lazy(()=>import('@Pages/Contact/Contact'));
 
 function App() {
   const routes = useRoutes([
-    { path: '/Home', element: <HomePage /> },
-    {path:'/',element:<Registration/>}
+    { path: '/', element: <Home/> },
+    {path:'/registration',element:<Registration/>},
+    {path:'/contact',element:<Contact/>}
   ])
   return (
     <>

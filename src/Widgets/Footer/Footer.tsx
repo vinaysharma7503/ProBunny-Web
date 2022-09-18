@@ -4,7 +4,7 @@ type Props = {}
 
 const Footer = (props: Props) => {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid p-0">
       <footer
         className="text-center text-lg-start text-white"
         style={{ backgroundColor: "#3e4551" }}
@@ -159,7 +159,7 @@ const Footer = (props: Props) => {
           className="text-center p-3"
           style={{ backgroundColor: " rgba(0, 0, 0, 0.2)" }}
         >
-          © 2020 Copyright
+          © {new Date().getFullYear()} Copyright
         </div>
       </footer>
     </div>
