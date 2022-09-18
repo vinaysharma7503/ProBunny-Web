@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './Footer.scss'
 
 type Props = {}
 
 const Footer = (props: Props) => {
   return (
-    <div className="container-fluid p-0">
+    <div className="container-fluid p-0 footer">
       <footer
         className="text-center text-lg-start text-white"
         style={{ backgroundColor: "#3e4551" }}
