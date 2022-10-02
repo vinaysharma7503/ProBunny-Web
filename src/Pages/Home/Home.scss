@@ -1,3 +1,11 @@
+.carousel-item{
+    .imgslider{
+        height: 675px !important;
+        min-height: 500px !important;
+    }
+    
+}
+
 .header-container {
     background-color: #021B56;
     color: #fff;
@@ -23,12 +31,29 @@
     overflow-x: auto;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;
-
-    ::-webkit-scrollbar{
-       display: none;
-    }
     .card{
         margin-right: 5px;
         min-width: 300px;
+    }
+}
+
+.wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+.det{
+    text-align: right;
+    padding-right: 30px;
+}
+
+.latestPro{
+    background-image: url('../../assets/projects/TOCSIN.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    color: #fff;
+    .latest{
+        width: 80%;
+        height: 80%;
     }
 }
