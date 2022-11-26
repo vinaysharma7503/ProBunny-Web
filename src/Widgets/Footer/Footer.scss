@@ -1,3 +1,15 @@
 footer{
     background-color: #021B56!important;
+        .navbar-brand{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            color: #fff;
+            margin-left:-80px;
+            .name{
+                margin-right: 2px;
+                font-weight: bold;
+            }
+        }
 }

@@ -1,5 +1,22 @@
+.navbar{
+    background-color: #021B56;
+    .navbar-brand{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        .name{
+            margin-left: 2px;
+            font-weight: bold;
+        }
+    }
+}
+.logo{
+    width: 65px;
+}
 .nav-link{
-    color: gray;
+    color: #fff;
     :hover{
         color: #021B56;
     }

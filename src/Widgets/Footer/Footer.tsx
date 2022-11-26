@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import logo from '../../assets/user/logo.png'
 import './Footer.scss'
 
 type Props = {}
@@ -15,7 +16,7 @@ const Footer = (props: Props) => {
           <section className="">
             <div className="row">
               <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
-                <h5 className="text-uppercase">FOOTER CONTENT</h5>
+                <Link className="navbar-brand" to="/"><img src={logo} alt="" className='logo' /><span className='name'>ProBunnyProduction</span></Link>
 
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -32,7 +33,7 @@ const Footer = (props: Props) => {
                     <Link to="/" className="text-white">Home</Link>
                   </li>
                   <li>
-                    <Link to="/about" className="text-white">About</Link>
+                    <Link to="/comingsoon" className="text-white">About</Link>
                   </li>
                   <li>
                     <Link to="/registration" className="text-white">Registration</Link>
@@ -114,18 +115,18 @@ const Footer = (props: Props) => {
             </div>
           </section>
 
-          <hr className="mb-4" />
+          {/* <hr className="mb-4" /> */}
 
-          <section className="">
+          {/* <section className="">
             <p className="d-flex justify-content-center align-items-center">
               <span className="me-3">Register for free</span>
               <button type="button" className="btn btn-outline-light btn-rounded">
                 Sign up!
               </button>
             </p>
-          </section>
+          </section> */}
 
-          <hr className="mb-4" />
+          {/* <hr className="mb-4" /> */}
 
           <section className="mb-4 text-center">
             <a
@@ -156,19 +157,19 @@ const Footer = (props: Props) => {
             ><i className="fab fa-instagram"></i
             ></a>
 
-            <a
+            {/* <a
               className="btn btn-outline-light btn-floating m-1"
               href="#!"
               role="button"
             ><i className="fab fa-linkedin-in"></i
-            ></a>
+            ></a> */}
 
-            <a
+            {/* <a
               className="btn btn-outline-light btn-floating m-1"
               href="#!"
               role="button"
             ><i className="fab fa-github"></i
-            ></a>
+            ></a> */}
           </section>
         </div>
 
@@ -176,7 +177,7 @@ const Footer = (props: Props) => {
           className="text-center p-3"
           style={{ backgroundColor: " rgba(0, 0, 0, 0.2)" }}
         >
-          © {new Date().getFullYear()} Copyright
+          © 2015-{new Date().getFullYear()} Copyright. All Rights Reserved.
         </div>
       </footer>
     </div>

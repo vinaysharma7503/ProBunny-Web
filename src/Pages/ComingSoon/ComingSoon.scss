@@ -1,0 +1,10 @@
+.coming{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    .text{
+        font-size: 4rem;
+        font-weight: 900;
+    }
+}

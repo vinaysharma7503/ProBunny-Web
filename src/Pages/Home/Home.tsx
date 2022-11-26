@@ -6,6 +6,8 @@ import latestProject from '../../assets/projects/TOCSIN.jpg'
 import slider1 from '../../assets/slider/TOCSIN.jpg'
 import slider2 from '../../assets/slider/BilliAkh.jpg'
 import slider3 from '../../assets/slider/BilliAkh.jpg'
+import bunny from '../../assets/user/bunny.jpeg'
+import sanjay from '../../assets/user/sanjay.jpeg'
 import './Home.scss'
 
 interface Props {
@@ -50,21 +52,24 @@ const Home = (props: Props) => {
                 <div className="row header-container d-flex justify-content-center align-item-center p-5">
                     <div className="col-md-5 p-2">
                         <h2>Hello, My Name is Bunny Singhal</h2><br />
-                        <h4>I am an Actor & Casting Director.</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, in. Accusantium fugiat, dolorem officia exercitationem reprehenderit, maxime ipsum minima facere rerum expedita quaerat sequi commodi excepturi recusandae eligendi, nobis iste?</p>
-                        <Link to='' className='btn btn-outline-primary'>Learn about me</Link>
+                        <h4>I am an Casting Director.</h4>
+                        <p>Bunny is Renowned in Casting Director and production in Bollywood, Delhi NCR, Mumbai fashion industry.He started his journey from Delhi Ncr.</p>
+                        <p>He is very talented in field of casting and any types of production.</p>
+                        <Link to='/comingsoon' className='btn btn-outline-primary'>Learn about me</Link>
                     </div>
-                    <div className="col-md-5"></div>
+                    <div className="col-md-5 d-flex justify-content-center align-item-center p-2">
+                        <img src={bunny} className='profile'/>
+                    </div>
                 </div>
                 <div className="row d-flex justify-content-center align-item-center p-5">
                     <div className="col-md-5 p-2">
-
+                    <img src={sanjay} className='profile'/>
                     </div>
                     <div className="col-md-5">
-                        <h2>Hello, My Name is xyz</h2><br />
-                        <h4>I am an Model & Actor.</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, in. Accusantium fugiat, dolorem officia exercitationem reprehenderit, maxime ipsum minima facere rerum expedita quaerat sequi commodi excepturi recusandae eligendi, nobis iste?</p>
-                        <Link to='' className='btn btn-outline-primary'>Learn about me</Link>
+                        <h2>Hello, My Name is Sanjay Gera.</h2><br />
+                        <h4>I am an Film Producer.</h4>
+                        <p>I am Bollywood Producer and working with Bunny and his team in my upcoming projects.</p>
+                        <Link to='/comingsoon' className='btn btn-outline-primary'>Learn about me</Link>
                     </div>
                 </div>
                 <div className="row d-flex justify-content-center align-item-center p-5 location">
@@ -84,7 +89,7 @@ const Home = (props: Props) => {
                 <div className="row">
                     <div className="col-md-12">
                         <h2 className="text-center">Our Projects</h2>
-                        <p className="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure distinctio exercitationem est quo, maiores ducimus culpa sed temporibus incidunt vero possimus accusantium nobis quas commodi fugiat et blanditiis voluptas minus.</p>
+                        <p className="text-center">We had done projects like movies, webseries, songs, advertisements.</p>
                     </div>
                     <div className="col-md-12">
                         <div className="row d-flex justify-content-center align-item-center p-2 latestPro">
@@ -112,206 +117,7 @@ const Home = (props: Props) => {
                         </div>
                         <div className="row">
                             <div className="col-md-12 d-flex justify-content-center align-item-center p-2">
-                                <Link to='' className='btn btn-outline-primary'>View More</Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="row d-flex justify-content-center align-item-center p-2">
-                    <div className="col-md-5">
-                        <h2>Actor</h2>
-                        <div className="card p-2">
-                            <div className="header">
-                                <h3 className='text-muted'>Alia Bhatt</h3>
-                            </div>
-                            <div className="body">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quo explicabo nesciunt aut laborum. Inventore, distinctio? Ipsa eius voluptatibus odio eaque possimus neque provident natus distinctio quaerat, laboriosam accusamus iusto.</p>
-                                <Link to='' className='btn btn-outline-primary'>View More</Link>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-5"></div>
-                    <div className="col-md-10 p-2">
-                        <div className='d-flex justify-content-end align-item-center p-2'>
-                            <Link to=''>View All</Link>
-                        </div>
-                        <div className="wrapper">
-                            <div className="card">
-                                <div className="card-body">
-                                    <div className="col-md-6"></div>
-                                    <div className="col-md-6">
-                                        <h4 className="text-center">AMANDA PETERSON</h4>
-                                        <p className="text-center">Model</p>
-                                        <p className="text-center">Age:30</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="card">
-                                <div className="card-body">
-                                    <div className="col-md-6"></div>
-                                    <div className="col-md-6">
-                                        <h4 className="text-center">AMANDA PETERSON</h4>
-                                        <p className="text-center">Model</p>
-                                        <p className="text-center">Age:30</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="card">
-                                <div className="card-body">
-                                    <div className="col-md-6"></div>
-                                    <div className="col-md-6">
-                                        <h4 className="text-center">AMANDA PETERSON</h4>
-                                        <p className="text-center">Model</p>
-                                        <p className="text-center">Age:30</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="card">
-                                <div className="card-body">
-                                    <div className="col-md-6"></div>
-                                    <div className="col-md-6">
-                                        <h4 className="text-center">AMANDA PETERSON</h4>
-                                        <p className="text-center">Model</p>
-                                        <p className="text-center">Age:30</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="card">
-                                <div className="card-body">
-                                    <div className="col-md-6"></div>
-                                    <div className="col-md-6">
-                                        <h4 className="text-center">AMANDA PETERSON</h4>
-                                        <p className="text-center">Model</p>
-                                        <p className="text-center">Age:30</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="card">
-                                <div className="card-body">
-                                    <div className="col-md-6"></div>
-                                    <div className="col-md-6">
-                                        <h4 className="text-center">AMANDA PETERSON</h4>
-                                        <p className="text-center">Model</p>
-                                        <p className="text-center">Age:30</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="card">
-                                <div className="card-body">
-                                    <div className="col-md-6"></div>
-                                    <div className="col-md-6">
-                                        <h4 className="text-center">AMANDA PETERSON</h4>
-                                        <p className="text-center">Model</p>
-                                        <p className="text-center">Age:30</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="card">
-                                <div className="card-body">
-                                    <div className="col-md-6"></div>
-                                    <div className="col-md-6">
-                                        <h4 className="text-center">AMANDA PETERSON</h4>
-                                        <p className="text-center">Model</p>
-                                        <p className="text-center">Age:30</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="row d-flex justify-content-end align-item-end p-2">
-                    <div className="col-md-6">
-                        <h2 className='text-end pe-4'>Singer</h2>
-                        <h3 className='text-end pe-4'>Jubain</h3>
-                        <p className='text-end text-wrap det'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt aspernatur est facere ipsa. Eveniet ut nam molestias, odit ab odio. Exercitationem incidunt esse commodi corporis aperiam obcaecati ex error odit!</p>
-                        <div className='d-flex justify-content-end pe-4'>
-                            <Link to='' className='btn btn-outline-primary'>View More</Link>
-                        </div>
-                    </div>
-                    <div className="col-md-12 p-2">
-                        <div className='d-flex justify-content-end align-item-center p-2'>
-                            <Link to=''>View All</Link>
-                        </div>
-                        <div className="wrapper">
-                            <div className="card">
-                                <div className="card-body">
-                                    <div className="col-md-6"></div>
-                                    <div className="col-md-6">
-                                        <h4 className="text-center">AMANDA PETERSON</h4>
-                                        <p className="text-center">Model</p>
-                                        <p className="text-center">Age:30</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="card">
-                                <div className="card-body">
-                                    <div className="col-md-6"></div>
-                                    <div className="col-md-6">
-                                        <h4 className="text-center">AMANDA PETERSON</h4>
-                                        <p className="text-center">Model</p>
-                                        <p className="text-center">Age:30</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="card">
-                                <div className="card-body">
-                                    <div className="col-md-6"></div>
-                                    <div className="col-md-6">
-                                        <h4 className="text-center">AMANDA PETERSON</h4>
-                                        <p className="text-center">Model</p>
-                                        <p className="text-center">Age:30</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="card">
-                                <div className="card-body">
-                                    <div className="col-md-6"></div>
-                                    <div className="col-md-6">
-                                        <h4 className="text-center">AMANDA PETERSON</h4>
-                                        <p className="text-center">Model</p>
-                                        <p className="text-center">Age:30</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="card">
-                                <div className="card-body">
-                                    <div className="col-md-6"></div>
-                                    <div className="col-md-6">
-                                        <h4 className="text-center">AMANDA PETERSON</h4>
-                                        <p className="text-center">Model</p>
-                                        <p className="text-center">Age:30</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="card">
-                                <div className="card-body">
-                                    <div className="col-md-6"></div>
-                                    <div className="col-md-6">
-                                        <h4 className="text-center">AMANDA PETERSON</h4>
-                                        <p className="text-center">Model</p>
-                                        <p className="text-center">Age:30</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="card">
-                                <div className="card-body">
-                                    <div className="col-md-6"></div>
-                                    <div className="col-md-6">
-                                        <h4 className="text-center">AMANDA PETERSON</h4>
-                                        <p className="text-center">Model</p>
-                                        <p className="text-center">Age:30</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="card">
-                                <div className="card-body">
-                                    <div className="col-md-6"></div>
-                                    <div className="col-md-6">
-                                        <h4 className="text-center">AMANDA PETERSON</h4>
-                                        <p className="text-center">Model</p>
-                                        <p className="text-center">Age:30</p>
-                                    </div>
-                                </div>
+                                <Link to='/projects' className='btn btn-outline-primary'>View More</Link>
                             </div>
                         </div>
                     </div>
