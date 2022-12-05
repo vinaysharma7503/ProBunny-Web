@@ -33,7 +33,10 @@ const Footer = (props: Props) => {
                     <Link to="/" className="text-white">Home</Link>
                   </li>
                   <li>
-                    <Link to="/comingsoon" className="text-white">About</Link>
+                    <Link to="/comingsoon" className="text-white">About Us</Link>
+                  </li>
+                  <li>
+                    <Link to="/projects" className="text-white">Projects</Link>
                   </li>
                   <li>
                     <Link to="/registration" className="text-white">Registration</Link>
@@ -48,19 +51,19 @@ const Footer = (props: Props) => {
 
                 <ul className="list-unstyled mb-0">
                   <li>
-                    <Link to="/" className="text-white">Actor</Link>
+                    <Link to="/comingsoon" className="text-white">Actor</Link>
                   </li>
                   <li>
-                    <Link to="/" className="text-white">Singer</Link>
+                    <Link to="/comingsoon" className="text-white">Singer</Link>
                   </li>
                   <li>
-                    <Link to="/" className="text-white">Dancer</Link>
+                    <Link to="/comingsoon" className="text-white">Dancer</Link>
                   </li>
                   <li>
-                    <Link to="/" className="text-white">Voice Artist</Link>
+                    <Link to="/comingsoon" className="text-white">Voice Artist</Link>
                   </li>
                   <li>
-                    <Link to="/" className="text-white">Model</Link>
+                    <Link to="/comingsoon" className="text-white">Model</Link>
                   </li>
                 </ul>
               </div>
@@ -69,25 +72,25 @@ const Footer = (props: Props) => {
 
                 <ul className="list-unstyled mb-0">
                 <li>
-                    <Link to="/" className="text-white">Costume Designer</Link>
+                    <Link to="/comingsoon" className="text-white">Costume Designer</Link>
                   </li>
                   <li>
-                    <Link to="/" className="text-white">Fashion Designer</Link>
+                    <Link to="/comingsoon" className="text-white">Fashion Designer</Link>
                   </li>
                   <li>
-                    <Link to="/" className="text-white">Art Designer</Link>
+                    <Link to="/comingsoon" className="text-white">Art Designer</Link>
                   </li>
                   <li>
-                    <Link to="/" className="text-white">Makeup Artist</Link>
+                    <Link to="/comingsoon" className="text-white">Makeup Artist</Link>
                   </li>
                   <li>
-                    <Link to="/" className="text-white">Camera Equipments</Link>
+                    <Link to="/comingsoon" className="text-white">Camera Equipments</Link>
                   </li>
                   <li>
-                    <Link to="/" className="text-white">Farm Houses</Link>
+                    <Link to="/comingsoon" className="text-white">Farm Houses</Link>
                   </li>
                   <li>
-                    <Link to="/" className="text-white">Event Origaniser</Link>
+                    <Link to="/comingsoon" className="text-white">Event Origaniser</Link>
                   </li>
                 </ul>
               </div>
@@ -96,19 +99,19 @@ const Footer = (props: Props) => {
 
                 <ul className="list-unstyled mb-0">
                 <li>
-                    <Link to="/" className="text-white">Directors</Link>
+                    <Link to="/comingsoon" className="text-white">Directors</Link>
                   </li>
                   <li>
-                    <Link to="/" className="text-white">Producers</Link>
+                    <Link to="/comingsoon" className="text-white">Producers</Link>
                   </li>
                   <li>
-                    <Link to="/" className="text-white">Assistant Directors</Link>
+                    <Link to="/comingsoon" className="text-white">Assistant Directors</Link>
                   </li>
                   <li>
-                    <Link to="/" className="text-white">Executive Director</Link>
+                    <Link to="/comingsoon" className="text-white">Executive Director</Link>
                   </li>
                   <li>
-                    <Link to="/" className="text-white">Production Head</Link>
+                    <Link to="/comingsoon" className="text-white">Production Head</Link>
                   </li>
                 </ul>
               </div>

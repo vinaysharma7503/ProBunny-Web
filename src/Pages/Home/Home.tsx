@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Footer from '../../Widgets/Footer/Footer'
 import Header from '../../Widgets/Header/Header'
-import latestProject from '../../assets/projects/TOCSIN.jpg'
 import slider1 from '../../assets/slider/TOCSIN.jpg'
 import slider2 from '../../assets/slider/BilliAkh.jpg'
 import slider3 from '../../assets/slider/BilliAkh.jpg'
@@ -72,7 +71,7 @@ const Home = (props: Props) => {
                         <Link to='/comingsoon' className='btn btn-outline-primary'>Learn about me</Link>
                     </div>
                 </div>
-                <div className="row d-flex justify-content-center align-item-center p-5 location">
+                {/* <div className="row d-flex justify-content-center align-item-center p-5 location">
                     <div className="col-md-12">
                         <h2 className="text-center">My <span className='live'>Live</span> Location</h2>
                     </div>
@@ -85,40 +84,16 @@ const Home = (props: Props) => {
                         <p>New Delhi, India</p>
                         <p>201001</p>
                     </div>
-                </div>
+                </div> */}
                 <div className="row">
                     <div className="col-md-12">
-                        <h2 className="text-center">Our Projects</h2>
-                        <p className="text-center">We had done projects like movies, webseries, songs, advertisements.</p>
+                        <h2 className="text-center">Our Clients</h2>
                     </div>
                     <div className="col-md-12">
-                        <div className="row d-flex justify-content-center align-item-center p-2 latestPro">
-                            <div className="col-md-5">
-                                <h4>TOCSIN</h4>
-                                <p>Singer | Lyrics : T-Jay
-                                    Music | Mix and Master : Ripple Drift
-                                    Female Lead : Mansi Gupta
-                                    DOP | Direction : Gill Sanpreet
-                                    Edit : Jaswinder Wahra
-                                    Recorded at Silk Road Studios, Gr Noida.
-                                    Casting : Bunny Singhal
-                                    Styling : Swag Paaji</p>
-                                <a href='https://youtu.be/AXQQ51VLUzs' className='btn btn-outline-primary'>Watch Now</a>
-                            </div>
-                            <div className="col-md-5">
-                                <img src={latestProject} alt="latest project" className='latest'/>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-md-3"></div>
-                            <div className="col-md-3"></div>
-                            <div className="col-md-3"></div>
-                            <div className="col-md-3"></div>
-                        </div>
-                        <div className="row">
-                            <div className="col-md-12 d-flex justify-content-center align-item-center p-2">
-                                <Link to='/projects' className='btn btn-outline-primary'>View More</Link>
-                            </div>
+                        <div className="row d-flex justify-content-center align-item-center">
+                            <div className="col-md-4"></div>
+                            <div className="col-md-4"></div>
+                            <div className="col-md-4"></div>
                         </div>
                     </div>
                 </div>
