@@ -1,3 +1,3 @@
 export default {
-    BASEURL:'https://api-civan-backend.herokuapp.com/api/v1'
+    BASEURL:'http://api.probunnyproduction.com/api/v1'
 }
