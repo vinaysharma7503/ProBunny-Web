@@ -31,13 +31,46 @@ const Registration = (props: Props) => {
         anyStretch: 'true' || '',
         extraSpeciality: '',
         location: '',
-        address: ''
+        address: '',
+        images:'',
+        video:''
     }, setRegistration] = useState<any>()
 
     const OnSubmit = (event: any) => {
         event.preventDefault();
         console.log('value', registration);
-        RegistrationData(registration, registrationResult)
+        let formData = new FormData()
+        formData.append('firstName',registration?.firstName)
+        formData.append('lastName',registration?.lastName)
+        formData.append('category',registration?.category)
+        formData.append('email',registration?.email)
+        formData.append('mobile',registration?.mobile)
+        formData.append('maritialStatus',registration?.maritialStatus)
+        formData.append('aadharPanNumber',registration?.aadharPanNumber)
+        formData.append('gender',registration?.gender)
+        formData.append('age',registration?.age)
+        formData.append('height',registration?.height)
+        formData.append('vitals',registration?.vitals)
+        formData.append('nationality',registration?.nationality)
+        formData.append('shoeSize',registration?.shoeSize)
+        formData.append('skinTone',registration?.skinTone)
+        formData.append('eyeColor',registration?.eyeColor)
+        formData.append('hairColor',registration?.hairColor)
+        formData.append('experience',registration?.experience)
+        formData.append('tattooOnBody',registration?.tattooOnBody)
+        formData.append('validPassport',registration?.validPassport)
+        formData.append('travelAnywhere',registration?.travelAnywhere)
+        formData.append('anyAllergy',registration?.anyAllergy)
+        formData.append('anyStretch',registration?.anyStretch)
+        formData.append('extraSpeciality',registration?.extraSpeciality)
+        formData.append('location',registration?.location)
+        formData.append('address',registration?.address)
+        for (const file of registration?.images) {
+            formData.append('images',file)
+        }
+        
+        formData.append('video',registration?.video[0])
+        RegistrationData(formData, registrationResult)
     }
 
     const registrationResult = (result: any) => {
@@ -104,8 +137,8 @@ const Registration = (props: Props) => {
                                                         name="fname"
                                                         value={registration.firstName}
                                                         placeholder="Enter your first name"
-                                                        required
                                                         onChange={(f) => setRegistration({ ...registration, firstName: f.target.value })}
+                                                        required
                                                     />
                                                 </div>
                                                 <div className="form-group-wraper col">
@@ -115,8 +148,8 @@ const Registration = (props: Props) => {
                                                         className="form-control"
                                                         name="lname"
                                                         placeholder="Enter your last name"
-                                                        required
                                                         onChange={(l) => setRegistration({ ...registration, lastName: l.target.value })}
+                                                        required
                                                     />
                                                 </div>
                                             </div>
@@ -128,8 +161,8 @@ const Registration = (props: Props) => {
                                                         className="form-control"
                                                         name="email"
                                                         placeholder="Enter your Email"
-                                                        required
                                                         onChange={(e) => setRegistration({ ...registration, email: e.target.value })}
+                                                        required
                                                     />
                                                 </div>
                                             </div>
@@ -158,8 +191,8 @@ const Registration = (props: Props) => {
                                                         className="form-control"
                                                         name="mobile_number"
                                                         placeholder="Enter your mobile number"
-                                                        required
                                                         onChange={(m) => setRegistration({ ...registration, mobile: m.target.value })}
+                                                        required
                                                     />
                                                 </div>
                                                 <div className="form-group-wraper col">
@@ -169,8 +202,8 @@ const Registration = (props: Props) => {
                                                         className="form-control"
                                                         name="maritial_status"
                                                         placeholder="Enter your maritial status"
-                                                        required
                                                         onChange={(ms) => setRegistration({ ...registration, maritialStatus: ms.target.value })}
+                                                        required
                                                     />
                                                 </div>
                                             </div>
@@ -183,8 +216,8 @@ const Registration = (props: Props) => {
                                                         name="aadhar"
                                                         placeholder="Enter your aadhar number"
                                                         minLength={8}
-                                                        required
                                                         onChange={(ap) => setRegistration({ ...registration, aadharPanNumber: ap.target.value })}
+                                                        required
                                                     />
                                                 </div>
                                             </div>
@@ -213,8 +246,8 @@ const Registration = (props: Props) => {
                                                         className="form-control"
                                                         name="age"
                                                         placeholder="Enter your age"
-                                                        required
                                                         onChange={(a) => setRegistration({ ...registration, age: a.target.value })}
+                                                        required
                                                     />
                                                 </div>
                                                 <div className="form-group-wraper col">
@@ -224,8 +257,8 @@ const Registration = (props: Props) => {
                                                         className="form-control"
                                                         name="height"
                                                         placeholder="Enter your height"
-                                                        required
                                                         onChange={(h) => setRegistration({ ...registration, height: h.target.value })}
+                                                        required
                                                     />
                                                 </div>
                                             </div>
@@ -237,8 +270,8 @@ const Registration = (props: Props) => {
                                                         className="form-control"
                                                         name="vitals"
                                                         placeholder="Enter your vitals"
-                                                        required
                                                         onChange={(vi) => setRegistration({ ...registration, vitals: vi.target.value })}
+                                                        required
                                                     />
                                                 </div>
                                                 <div className="form-group-wraper col">
@@ -248,8 +281,8 @@ const Registration = (props: Props) => {
                                                         className="form-control"
                                                         name="nationality"
                                                         placeholder="Enter your nationality"
-                                                        required
                                                         onChange={(n) => setRegistration({ ...registration, nationality: n.target.value })}
+                                                        required
                                                     />
                                                 </div>
                                             </div>
@@ -261,8 +294,8 @@ const Registration = (props: Props) => {
                                                         className="form-control"
                                                         name="shoe_size"
                                                         placeholder="Enter your shoe size"
-                                                        required
                                                         onChange={(so) => setRegistration({ ...registration, shoeSize: so.target.value })}
+                                                        required
                                                     />
                                                 </div>
                                                 <div className="form-group-wraper col">
@@ -272,8 +305,8 @@ const Registration = (props: Props) => {
                                                         className="form-control"
                                                         name="skin_tone"
                                                         placeholder="Enter your skin tone"
-                                                        required
                                                         onChange={(st) => setRegistration({ ...registration, skinTone: st.target.value })}
+                                                        required
                                                     />
                                                 </div>
                                             </div>
@@ -285,8 +318,8 @@ const Registration = (props: Props) => {
                                                         className="form-control"
                                                         name="eye_color"
                                                         placeholder="Enter your eye color"
-                                                        required
                                                         onChange={(ec) => setRegistration({ ...registration, eyeColor: ec.target.value })}
+                                                        required
                                                     />
                                                 </div>
                                                 <div className="form-group-wraper col">
@@ -296,8 +329,8 @@ const Registration = (props: Props) => {
                                                         className="form-control"
                                                         name="hair_color"
                                                         placeholder="Enter your hair color"
-                                                        required
                                                         onChange={(hc) => setRegistration({ ...registration, hairColor: hc.target.value })}
+                                                        required
                                                     />
                                                 </div>
                                             </div>
@@ -309,8 +342,8 @@ const Registration = (props: Props) => {
                                                         className="form-control"
                                                         name="experience"
                                                         placeholder="Enter your experience"
-                                                        required
                                                         onChange={(ex) => setRegistration({ ...registration, experience: ex.target.value })}
+                                                        required
                                                     />
                                                 </div>
                                                 <div className="form-group-wraper col">
@@ -320,8 +353,8 @@ const Registration = (props: Props) => {
                                                         className="form-control"
                                                         name="tattoo"
                                                         placeholder="Enter your tattoo detail"
-                                                        required
                                                         onChange={(tat) => setRegistration({ ...registration, tattooOnBody: tat.target.value })}
+                                                        required
                                                     />
                                                 </div>
                                             </div>
@@ -386,6 +419,7 @@ const Registration = (props: Props) => {
                                                         placeholder="Enter your extra speciality"
                                                         rows={2}
                                                         onChange={(sp) => setRegistration({ ...registration, extraSpeciality: sp.target.value })}
+                                                        required
                                                     ></textarea>
                                                 </div>
                                             </div>
@@ -397,8 +431,8 @@ const Registration = (props: Props) => {
                                                         className="form-control"
                                                         name="location"
                                                         placeholder="Enter your location"
-                                                        required
                                                         onChange={(loc) => setRegistration({ ...registration, location: loc.target.value })}
+                                                        required
                                                     />
                                                 </div>
                                             </div>
@@ -411,17 +445,18 @@ const Registration = (props: Props) => {
                                                         placeholder="Enter your address here"
                                                         rows={2}
                                                         onChange={(add) => setRegistration({ ...registration, address: add.target.value })}
+                                                        required
                                                     ></textarea>
                                                 </div>
                                             </div>
                                             <div className="form-group row">
                                                 <div className="form-group-wraper col">
                                                     <label>UPLOAD YOUR IMAGES</label><br />
-                                                    <input type='file' multiple />
+                                                    <input type='file' multiple onChange={(im)=>{setRegistration({ ...registration, images: im.target.files })}} />
                                                 </div>
                                                 <div className="form-group-wraper col">
                                                     <label>UPLOAD YOUR VIDEO</label><br />
-                                                    <input type='file' multiple />
+                                                    <input type='file' onChange={(v)=>{setRegistration({ ...registration, video: v.target.files })}} />
                                                 </div>
                                             </div>
                                             <div className="pt-2 d-flex align-items-center justify-content-center w-100">
