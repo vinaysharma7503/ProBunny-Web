@@ -67,7 +67,7 @@ const Home = (props: Props) => {
                     <div className="col-md-5">
                         <h2>Hello, My Name is Sanjay Gera.</h2><br />
                         <h4>I am an Film Producer.</h4>
-                        <p>I am Bollywood Producer and working with Bunny and his team in my upcoming projects.</p>
+                        <p>I am Sanjay Gera Bollywood Producer and working with Bunny and his team in my upcoming projects.</p>
                         <Link to='/comingsoon' className='btn btn-outline-primary'>Learn about me</Link>
                     </div>
                 </div>
