@@ -179,6 +179,23 @@ const Registration = (props: Props) => {
                                                             Actor
                                                         </option>
                                                         <option value="Modal">Model</option>
+                                                        <option value="Director">Director</option>
+                                                        <option value="Dop">Dop</option>
+                                                        <option value="Writer">Writer</option>
+                                                        <option value="Executive Producer">Executive Producer</option>
+                                                        <option value="Assistant Director">Assistant Director</option>
+                                                        <option value="Make-up Artist">Make-up Artist</option>
+                                                        <option value="Art Director">Art Director</option>
+                                                        <option value="Creative Director">Creative Director</option>
+                                                        <option value="Cinematographer">Cinematographer</option>
+                                                        <option value="Editor/VFX">Editor/VFX</option>
+                                                        <option value="Cameraman/Equiments">Cameraman/Equiments</option>
+                                                        <option value="Music Director">Music Director</option>
+                                                        <option value="Choreographer">Choreographer</option>
+                                                        <option value="Line Producer">Line Producer</option>
+                                                        <option value="Costume Designer">Costume Designer</option>
+                                                        <option value="Spot Man">Spot Man</option>
+                                                        <option value="Caterers">Caterers</option>
                                                         <option value="Other">Other</option>
                                                     </select>
                                                 </div>

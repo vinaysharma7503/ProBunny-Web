@@ -19,10 +19,7 @@ const Footer = (props: Props) => {
                 <Link className="navbar-brand" to="/"><img src={logo} alt="" className='logo' /><span className='name'>ProBunnyProduction</span></Link>
 
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Molestiae modi cum ipsam ad, illo possimus laborum ut
-                  reiciendis obcaecati. Ducimus, quas. Corrupti, pariatur eaque?
-                  Reiciendis assumenda iusto sapiente inventore animi?
+                  ProBunnyProduction is a known production in bollywood, Delhi NCR,Mumbai fashion industry from last many years.
                 </p>
               </div>
               <div className="col-lg-2 col-md-6 mb-4 mb-md-0">
@@ -155,8 +152,9 @@ const Footer = (props: Props) => {
 
             <a
               className="btn btn-outline-light btn-floating m-1"
-              href="#!"
+              href="https://www.instagram.com/iambunnysinghal/"
               role="button"
+              target={'target_blank'}
             ><i className="fab fa-instagram"></i
             ></a>
 

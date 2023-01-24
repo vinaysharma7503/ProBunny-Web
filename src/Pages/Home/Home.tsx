@@ -7,6 +7,7 @@ import slider2 from '../../assets/slider/BilliAkh.jpg'
 import slider3 from '../../assets/slider/BilliAkh.jpg'
 import bunny from '../../assets/user/bunny.jpeg'
 import sanjay from '../../assets/user/sanjay.jpeg'
+import zeemusic from '../../assets/zeemusic.jpeg'
 import './Home.scss'
 
 interface Props {
@@ -91,7 +92,9 @@ const Home = (props: Props) => {
                     </div>
                     <div className="col-md-12">
                         <div className="row d-flex justify-content-center align-item-center">
-                            <div className="col-md-4"></div>
+                            <div className="col-md-4">
+                                <img src={zeemusic} alt="zeemusic" className='clientlogo' />
+                            </div>
                             <div className="col-md-4"></div>
                             <div className="col-md-4"></div>
                         </div>
